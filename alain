@@ -1,314 +1,93 @@
-index.html
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Alain - Peintre & Sculpteur</title>
+# 🎨 Site d'Artiste
 
-<style>
-body{
-    margin:0;
-    font-family: Georgia, serif;
-    background:#e8dfd2;
-    color:#3a2c1f;
-}
+Voici un site d’artiste simple, moderne et responsive.
 
-/* HEADER */
-header{
-    height:90vh;
-    background:
-    linear-gradient(rgba(30,20,10,0.7),rgba(30,20,10,0.7)),
-    url('hero.jpg');
-    background-size:cover;
-    background-position:center;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
-    color:white;
-}
+---
 
-header h1{
-    font-size:4rem;
-    letter-spacing:2px;
-}
+## 🧑‍🎨 Biographie
 
-header p{
-    font-size:1.5rem;
-}
+Je suis un artiste contemporain passionné par l’expression visuelle à travers la peinture, la photographie et les installations numériques.
 
-/* NAV */
-nav{
-    background:#6b4a2f;
-    padding:15px;
-    text-align:center;
-    position:sticky;
-    top:0;
-}
+Mon travail explore la lumière, les émotions et les contrastes du monde moderne.
 
-nav a{
-    color:white;
-    margin:0 15px;
-    text-decoration:none;
-    font-weight:bold;
-}
+---
 
-/* SECTIONS */
-section{
-    padding:70px 10%;
-}
+## 🖼️ Œuvres
 
-h2{
-    font-size:2.5rem;
-    margin-bottom:20px;
-    color:#5a3d25;
-}
+### Galerie
 
-/* BIO */
-.bio{
-    background:#f5eee5;
-    border-left:6px solid #a87445;
-    padding:30px;
-}
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px;">
 
-/* GALERIE */
-.filters{
-    text-align:center;
-    margin-bottom:30px;
-}
-
-.filters button{
-    margin:5px;
-    padding:10px 15px;
-    border:none;
-    background:#7a5534;
-    color:white;
-    cursor:pointer;
-}
-
-.gallery{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:20px;
-}
-
-.card{
-    background:white;
-    box-shadow:0 3px 10px rgba(0,0,0,0.2);
-    cursor:pointer;
-    transition:0.3s;
-}
-
-.card:hover{
-    transform:scale(1.03);
-}
-
-.card img{
-    width:100%;
-    height:250px;
-    object-fit:cover;
-}
-
-.card p{
-    padding:10px;
-}
-
-/* MODAL ZOOM */
-.modal{
-    display:none;
-    position:fixed;
-    top:0;left:0;
-    width:100%;
-    height:100%;
-    background:rgba(0,0,0,0.9);
-    justify-content:center;
-    align-items:center;
-}
-
-.modal img{
-    max-width:90%;
-    max-height:80%;
-}
-
-/* ACTUALITES */
-.news{
-    background:#f5eee5;
-}
-
-.news-item{
-    background:white;
-    padding:20px;
-    margin-bottom:15px;
-    border-left:5px solid #a87445;
-}
-
-/* CONTACT */
-.contact form{
-    max-width:600px;
-    margin:auto;
-}
-
-input,textarea{
-    width:100%;
-    padding:12px;
-    margin-bottom:10px;
-    border:1px solid #cdb9a4;
-}
-
-button{
-    background:#7a5534;
-    color:white;
-    padding:12px 20px;
-    border:none;
-    cursor:pointer;
-}
-
-.whatsapp{
-    display:inline-block;
-    margin-top:20px;
-    background:#25D366;
-    color:white;
-    padding:15px 20px;
-    text-decoration:none;
-}
-
-/* FOOTER */
-footer{
-    background:#2d1f14;
-    color:white;
-    text-align:center;
-    padding:20px;
-}
-</style>
-</head>
-
-<body>
-
-<header>
-<h1>Alain</h1>
-<p>Peintre & Sculpteur – Lévignac, France</p>
-</header>
-
-<nav>
-<a href="#bio">Biographie</a>
-<a href="#gallery">Galerie</a>
-<a href="#news">Actualités</a>
-<a href="#contact">Contact</a>
-</nav>
-
-<!-- BIO -->
-<section id="bio">
-<h2>Biographie</h2>
-<div class="bio">
-<p>
-👉 Écrivez ici votre biographie artistique.
-<br><br>
-Peintre et sculpteur, Alain développe une démarche entre
-matière, lumière et émotion. Ses œuvres explorent les formes
-classiques et contemporaines.
-</p>
-</div>
-</section>
-
-<!-- GALLERY -->
-<section id="gallery">
-<h2>Galerie</h2>
-
-<div class="filters">
-<button onclick="filter('all')">Tout</button>
-<button onclick="filter('peinture')">Peintures</button>
-<button onclick="filter('sculpture')">Sculptures</button>
+<div>
+<img src="https://via.placeholder.com/300x200" style="width:100%;border-radius:10px;">
+<h3>Œuvre 1</h3>
 </div>
 
-<div class="gallery" id="gallery">
-
-<!-- EXEMPLES (vous pourrez en ajouter 500+) -->
-<div class="card peinture" onclick="openImg(this)">
-<img src="img1.jpg">
-<p>Œuvre peinture 1</p>
+<div>
+<img src="https://via.placeholder.com/300x200" style="width:100%;border-radius:10px;">
+<h3>Œuvre 2</h3>
 </div>
 
-<div class="card sculpture" onclick="openImg(this)">
-<img src="img2.jpg">
-<p>Sculpture 1</p>
+<div>
+<img src="https://via.placeholder.com/300x200" style="width:100%;border-radius:10px;">
+<h3>Œuvre 3</h3>
 </div>
 
-<div class="card peinture" onclick="openImg(this)">
-<img src="img3.jpg">
-<p>Œuvre peinture 2</p>
+<div>
+<img src="https://via.placeholder.com/300x200" style="width:100%;border-radius:10px;">
+<h3>Œuvre 4</h3>
 </div>
 
 </div>
-</section>
 
-<!-- MODAL -->
-<div class="modal" id="modal" onclick="this.style.display='none'">
-<img id="modalImg">
-</div>
+---
 
-<!-- NEWS -->
-<section id="news">
-<h2>Actualités & Expositions</h2>
+## 🏛️ Expositions
 
-<div class="news-item">
-<h3>Exposition à venir</h3>
-<p>Ajoutez ici vos expositions, dates et lieux.</p>
-</div>
+- Galerie Moderne de Paris — 2024  
+- Expo Art Contemporain Lyon — 2025  
+- Festival International des Arts Numériques — 2026  
 
-<div class="news-item">
-<h3>Nouvelle création</h3>
-<p>Présentation de vos nouvelles œuvres.</p>
-</div>
+---
 
-</section>
+## 📰 Articles
 
-<!-- CONTACT -->
-<section id="contact">
-<h2>Contact</h2>
+### Derniers articles
 
-<p>Email : votre@email.com</p>
-<p>Téléphone : 06 00 00 00 00</p>
+**1. L’art numérique aujourd’hui**  
+Exploration de l’impact du digital dans l’art moderne.
 
-<form>
-<input type="text" placeholder="Nom">
-<input type="email" placeholder="Email">
-<textarea rows="6" placeholder="Votre message"></textarea>
-<button>Envoyer</button>
-</form>
+**2. La couleur et les émotions**  
+Comment les couleurs influencent la perception humaine.
 
-<a class="whatsapp"
-href="https://wa.me/33600000000">
-📱 WhatsApp
-</a>
-</section>
+**3. Le futur des galeries virtuelles**  
+Les expositions en ligne deviennent la norme.
 
-<footer>
-© Alain - Peintre & Sculpteur
-</footer>
+---
 
-<script>
+## 📩 Contact
 
-// ZOOM IMAGE
-function openImg(el){
-    document.getElementById('modal').style.display='flex';
-    document.getElementById('modalImg').src =
-    el.querySelector('img').src;
-}
+Pour me contacter :
 
-// FILTRES
-function filter(type){
-    let cards = document.querySelectorAll('.card');
-    cards.forEach(c=>{
-        if(type==='all'){
-            c.style.display='block';
-        } else {
-            c.style.display = c.classList.contains(type) ? 'block':'none';
-        }
-    });
-}
-</script>
+- Email : artiste@email.com  
+- Instagram : @monartiste  
+- Téléphone : +33 6 00 00 00 00  
 
-</body>
-</html>
+---
+
+## 💳 Paiement / Soutien
+
+Soutenez mon travail artistique :
+
+<button onclick="alert('Paiement simulé - intégrer Stripe ou PayPal pour un vrai paiement')">
+💰 Faire un don
+</button>
+
+---
+
+## ⚙️ Script (optionnel)
+
+Ajoute ceci dans un fichier `script.js` si tu veux des interactions :
+
+```javascript
+console.log("Site artiste chargé 🎨");
